@@ -48,7 +48,7 @@ def reduce_to_all_true(array)
     if !(array[count]) == true
           value = false
     else value = true
-    
+
   end
   value
   end
