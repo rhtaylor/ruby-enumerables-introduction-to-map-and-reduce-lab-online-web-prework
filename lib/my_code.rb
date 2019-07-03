@@ -42,15 +42,13 @@ def reduce_to_total(array, starting_point = 0)
   starting_point
   end
 def reduce_to_all_true(array)
-  value
-  count = 0
-  while array[count] do
-    if !(array[count] == true)
-          value = false
-    else
-      count += 1
-      value = true
-
+  value = true
+  i = -1
+  number = array.length
+  number.times do
+  i += 1
+  unless array[i]
+    value = false
   end
   value
-  end
+end
