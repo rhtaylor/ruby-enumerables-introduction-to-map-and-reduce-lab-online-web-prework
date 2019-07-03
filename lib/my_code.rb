@@ -53,3 +53,12 @@ def reduce_to_all_true(array)
 end
   value
 end
+def reduce_to_any_true(array)
+  value = false
+  i = -1
+  array.length.times do
+    unless array[i]
+      value = true
+    end
+  end
+end
