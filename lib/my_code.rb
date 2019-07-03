@@ -50,5 +50,6 @@ def reduce_to_all_true(array)
   unless array[i]
     value = false
   end
+end
   value
 end
