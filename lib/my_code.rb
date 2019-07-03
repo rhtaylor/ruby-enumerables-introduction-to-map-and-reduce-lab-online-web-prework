@@ -55,10 +55,11 @@ end
 end
 def reduce_to_any_true(array)
   value = false
-  i = -1
+  i = 0
   array.length.times do
-    unless array[i]
-      value = true
+    if array[i]
+      i += 1
+      return true
     end
   end
 end
